@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    text-align: center;
+}
+
+.heading {
+    font-size: 50px;
+    color: white;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71vh;
+    margin: 0;
+    gap: 10%;
+}
+
+.watch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 1rem 2rem;
+    border-radius: 50%;
+}
+
+.stopwatch {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 8px solid #6c757d;
+    padding: 40px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10%;
+}
+
+#display {
+    font-size: 41px;
+    color: white;
+}
+
+.buttons button {
+    font-size: 19px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #bfdbf7;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #457b9d;
+}
+
+.buttons button:active {
+    transform: scale(0.98);
+}
+.laps-box{
+    color: white;
+    height: 70vh;
+}
+
+.over {
+    overflow-y: scroll;
+}
+
+.laps-box h1{
+    color: white;
+    margin-bottom: 40px;
+}
+.laps-table{
+    table-layout: fixed;
+    border: none;
+}
+.laps-h, .lap{
+    width: 200px;
+    padding: 0.8rem 0;
+}
+ 
+@media (min-width: 768px) and (max-width: 1024px) {
+    section{
+        gap:0%;
+    }
+}
+
+@media (max-width: 768px) {
+    section{
+        flex-direction: column;
+        height: 70vh;
+        gap:0%;
+    }
+    .watch{
+        height: 40vh;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .stopwatch {
+        padding: 20px;
+        height: 120px;
+    }
+    #display {
+        font-size: 20px;
+    }
+    .buttons button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .laps-h, .lap{
+        width: 300px;
+    }
+}
+
+.hide {
+    display: none;
+}
