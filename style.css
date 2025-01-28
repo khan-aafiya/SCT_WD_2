@@ -71,6 +71,9 @@ section{
 .over {
     overflow-y: scroll;
 }
+.over::-webkit-scrollbar{
+    display: none;
+}
 
 .laps-box h1{
     color: white;
